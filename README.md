@@ -27,7 +27,7 @@ def RobustWideResNet34(num_classes=10):
 ##### WRN-34-R trained with TRADES
 Replace PGD with other attacks ['CW', 'GAMA', 'AA'].
 ```console
-python main.py --config_path configs/config-WRN-34-20-R
+python main.py --config_path configs/config-WRN-34-R
                --exp_name /path/to/experiments/folders
                --version WRN-34-R-trades
                --load_best_model --attack PGD --data_parallel
@@ -36,7 +36,7 @@ python main.py --config_path configs/config-WRN-34-20-R
 ##### WRN-34-R trained with TRADES and additional 500k data
 Replace PGD with other attacks ['CW', 'GAMA', 'AA'].
 ```console
-python main.py --config_path configs/config-WRN-34-20-R
+python main.py --config_path configs/config-WRN-34-R
                --exp_name /path/to/experiments/folders
                --version WRN-34-R-trades-500k
                --load_best_model --attack PGD --data_parallel
@@ -44,7 +44,7 @@ python main.py --config_path configs/config-WRN-34-20-R
 
 ## Train WRN-34-R with 500k additional data from scratch
 ```console
-python main.py --config_path configs/config-WRN-34-20-R
+python main.py --config_path configs/config-WRN-34-R
                --exp_name /path/to/experiments/folders
                --version WRN-34-R-trades-500k
                --train --data_parallel
