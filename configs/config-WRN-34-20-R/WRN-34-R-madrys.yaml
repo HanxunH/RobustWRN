@@ -1,0 +1,39 @@
+num_classes: 10
+epochs: 100
+grad_clip: 5.0
+log_frequency: 100
+
+model:
+  name: RobustWideResNet
+  channel_configs: [16, 320, 640, 512]
+  depth_configs: [5, 5, 5]
+  drop_rate_config: [0.0, 0.0, 0.0]
+  num_classes: 10
+  stride_config: [1, 2, 2]
+  zero_init_residual: False
+  activations: ['ReLU', 'ReLU', 'ReLU']
+
+criterion:
+  name: MadrysLoss
+  epsilon: 0.03137254901960784313725
+  perturb_steps: 10
+  step_size: 0.007843137254901960784314
+
+dataset:
+  name: DatasetGenerator
+  train_batch_size: 128
+  eval_batch_size: 128
+  num_of_workers: 8
+  dataset_type: 'CIFAR10'
+  data_path: '../../datasets'
+
+optimizer:
+  name: SGD
+  lr: 0.1
+  weight_decay: 2.e-4
+  momentum: 0.9
+
+scheduler:
+  name: MultiStepLR
+  milestones: [75, 90, 100]
+  gamma: 0.1

@@ -1,0 +1,40 @@
+num_classes: 10
+epochs: 400
+grad_clip: -1
+log_frequency: 50
+lr_schedule: 'cosine'
+
+model:
+  name: RobustWideResNet
+  channel_configs: [16, 192, 384, 768]
+  depth_configs: [5, 5, 5]
+  drop_rate_config: [0.0, 0.0, 0.0]
+  num_classes: 10
+  stride_config: [1, 2, 2]
+  zero_init_residual: False
+  activations: ['ReLU', 'ReLU', 'ReLU']
+
+criterion:
+  name: TradesLoss
+  epsilon: 0.03137254901960784313725
+  perturb_steps: 10
+  step_size: 0.007843137254901960784314
+  beta: 6.0
+
+dataset:
+  name: DatasetGenerator
+  train_batch_size: 256
+  eval_batch_size: 256
+  num_of_workers: 8
+  dataset_type: 'CIFAR10'
+  data_path: '../../datasets'
+  use_additional_data: True
+  additional_data_path: 'ti_500K_pseudo_labeled.pickle'
+  train_portion: 0.5
+
+optimizer:
+  name: SGD
+  lr: 0.1
+  weight_decay: 5.e-4
+  momentum: 0.9
+  nesterov: False
