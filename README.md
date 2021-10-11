@@ -1,6 +1,6 @@
 # Exploring Architectural Ingredients of Adversarially Robust Deep Neural Networks
 
-Code for NeurIPS 2021 Paper ["Exploring Architectural Ingredients of Adversarially Robust Deep Neural Networks"]() (*link not available yet*) by Hanxun Huang, Yisen Wang, Sarah Monazam Erfani, Quanquan Gu, James Bailey, Xingjun Ma
+Code for NeurIPS 2021 Paper ["Exploring Architectural Ingredients of Adversarially Robust Deep Neural Networks"](https://arxiv.org/abs/2110.03825) by Hanxun Huang, Yisen Wang, Sarah Monazam Erfani, Quanquan Gu, James Bailey, Xingjun Ma
 
 
 ---
