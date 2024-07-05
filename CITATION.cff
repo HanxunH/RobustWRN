@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Huang"
+  given-names: "Hanxun"
+  orcid: "https://orcid.org/0000-0002-2793-6680"
+- family-names: "Wang"
+  given-names: "Yisen"
+- family-names: "Erfani"
+  given-names: "Sarah"
+  orcid: "https://orcid.org/0000-0003-0885-0643"
+- family-names: "Gu"
+  given-names: "Quanquan"
+- family-names: "Bailey"
+  given-names: "James"
+  orcid: "https://orcid.org/0000-0002-3769-3811"
+- family-names: "Ma"
+  given-names: "Xingjun"
+  orcid: "https://orcid.org/0000-0003-2099-4973"
+title: "Exploring Architectural Ingredients of Adversarially Robust Deep Neural Networks"
+version: 0.0.1
+date-released: 2021-10-14
+url: "https://github.com/HanxunH/RobustWRN"
+preferred-citation:
+  type: conference-paper
+  title: "Exploring Architectural Ingredients of Adversarially Robust Deep Neural Networks"
+  authors:
+    - family-names: "Huang"
+      given-names: "Hanxun"
+      orcid: "https://orcid.org/0000-0002-2793-6680"
+    - family-names: "Wang"
+      given-names: "Yisen"
+    - family-names: "Erfani"
+      given-names: "Sarah"
+      orcid: "https://orcid.org/0000-0003-0885-0643"
+    - family-names: "Gu"
+      given-names: "Quanquan"
+    - family-names: "Bailey"
+      given-names: "James"
+      orcid: "https://orcid.org/0000-0002-3769-3811"
+    - family-names: "Ma"
+      given-names: "Xingjun"
+      orcid: "https://orcid.org/0000-0003-2099-4973"
+  collection-title: "NeurIPS"
+  year: 2021
